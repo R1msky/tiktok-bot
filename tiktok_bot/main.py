@@ -80,7 +80,7 @@ class TikTokBot:
 
                 # переходим на айфрэйм
                 self.driver.switch_to.frame(iframe)
-                self.driver.implicitly_wait(7)
+                time.sleep(7)
 
                 # нажимаем на вход через ВК. Тут тикток тоже подкидывает разные сюрпризы
                 if self.xpath_exists("//div[contains(text(), 'VK')]"):
